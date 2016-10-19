@@ -183,3 +183,10 @@ function init() {
         icon: image
     });
 }
+
+jQuery(document).ready(function($) {
+    $('body')
+        .on('hover', '.fa-gitlab', function(event){
+            $(this).css('color', '#e24329');
+        })
+});
