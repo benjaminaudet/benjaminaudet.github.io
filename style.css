@@ -1,0 +1,25 @@
+h1 {
+  font-family: 'Roboto';
+  font-weight: 300;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-weight: 100;
+  text-align: center;
+}
+
+#home {
+  margin-top: 0px;
+}
+
+#timeline-container {
+  width: 80%;
+  height: 570px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+
