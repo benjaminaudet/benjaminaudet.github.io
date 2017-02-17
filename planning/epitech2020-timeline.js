@@ -2,6 +2,25 @@ google.charts.load("current", {packages:["timeline"]});
 google.charts.setOnLoadCallback(drawChart);
 var today = new Date();
 
+$.ajax({
+  url: 'https://intra.epitech.eu/annuel/instance?format=json&semester=4&city=FR%2FLYN&year=2016',
+  dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+  headers: {"Access-Control-Allow-Origin": "*"},
+  xhrFields: {
+    withCredentials: true
+  }
+})
+.done(function() {
+  console.log("success");
+})
+.fail(function() {
+  console.log("error");
+})
+.always(function() {
+  console.log("complete");
+});
+
+
 function drawChart() {
   var container = document.getElementById('timeline-container');
   var chart = new google.visualization.Timeline(container);
